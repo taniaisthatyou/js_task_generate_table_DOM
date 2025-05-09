@@ -388,10 +388,10 @@ function getPersonRow(person) {
   return row;
 }
 
-const table = document.querySelector('.dashboard');
+const tableBody = document.querySelector('.dashboard tbody');
 
 for (const person of people) {
   const row = getPersonRow(person);
 
-  table.appendChild(row);
+  tableBody.appendChild(row);
 }
